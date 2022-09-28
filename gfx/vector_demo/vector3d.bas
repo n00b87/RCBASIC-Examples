@@ -20,7 +20,7 @@ wdwd=1
 xedge=512
 yedge=384
 
-WindowOpen(0, "3D Vector", 20, 20, xedge, yedge, 0)
+WindowOpen(0, "3D Vector", 20, 20, xedge, yedge, WINDOW_VISIBLE, 1)
 CanvasOpen(0, xedge, yedge, 0, 0, xedge, yedge, 0)
 Canvas(0)
 SetColor(rgb(32, 32,128))
@@ -196,7 +196,7 @@ while true
 	for zz=-20 to 20 step 5
 		Rect3d_xy(-20,-20,20,20,zz)
 	next
-		drawText("User Input = " + ReadInput_Text(), 10, 10)
+		drawText("User Input = " + ReadInput_Text() +";", 10, 10)
 
 	if key(k_escape) then
 		exit while

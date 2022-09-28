@@ -1,0 +1,7 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:Fibonacci
+PROJECT_MAIN:fibonacci.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.com
+DESCRIPTION:Fibonacci Sequence
+SOURCE_REL:fibonacci.bas.bas

@@ -180,7 +180,7 @@
     	next
     	return picb[field[fieldnum,fieldelem]]
     end function
-    WindowOpen ( 0, "TEST WINDOW", 100, 100, 640, 480, 0 )
+    WindowOpen ( 0, "TEST WINDOW", 100, 100, 640, 480, WINDOW_VISIBLE, 1 )
     CanvasOpen ( 0, 640, 480, 0, 0, 640, 480, 0 )
     loadImage(0,"ground2.png")
     addPic(0,0,1,1,15,15,0)

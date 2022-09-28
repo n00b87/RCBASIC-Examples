@@ -1,0 +1,8 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:Vector Demo
+PROJECT_MAIN:vector3d.bas
+AUTHOR:
+WEBSITE:
+DESCRIPTION:Vector Graphics Demo
+SOURCE_REL:vector3d.bas
+SOURCE_REL:vector3d_touch.bas

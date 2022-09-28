@@ -1,0 +1,8 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:Gold Waves
+PROJECT_MAIN:GoldWaves_Solid.bas
+AUTHOR:johnno56
+WEBSITE:rcbasic.com
+DESCRIPTION:Gold Waves Demo
+SOURCE_REL:GoldWaves_Solid.bas
+SOURCE_REL:GoldWaves_WireFrame.bas

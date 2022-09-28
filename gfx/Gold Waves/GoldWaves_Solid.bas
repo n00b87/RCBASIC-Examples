@@ -8,7 +8,7 @@
 'http://www.rcbasic.com
 
 '--------------------------------------------------------  
-WindowOpen(0,"Golden Waves",WINDOWPOS_CENTERED,WINDOWPOS_CENTERED,600,600,0)
+WindowOpen(0,"Golden Waves",WINDOWPOS_CENTERED,WINDOWPOS_CENTERED,600,600,WINDOW_VISIBLE,1)
 CanvasOpen(0,600,600,0,0,600,600,0)
 Window(0)
 CanvasOpen(1, 24, 16, 0, 0, 24, 16, 0)

@@ -1,0 +1,7 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:File Test
+PROJECT_MAIN:File_Test.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.com
+DESCRIPTION:File I/O Demo
+SOURCE_REL:File_Test.bas

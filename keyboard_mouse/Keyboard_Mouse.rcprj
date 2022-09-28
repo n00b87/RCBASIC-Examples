@@ -1,0 +1,9 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:Keyboard and Mouse Demo
+PROJECT_MAIN:key.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.com
+DESCRIPTION:Keyboard and Mouse Demo
+SOURCE_REL:key.bas
+SOURCE_REL:Inkey.bas
+SOURCE_REL:mouse.bas

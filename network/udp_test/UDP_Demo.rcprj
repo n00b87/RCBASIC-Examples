@@ -1,0 +1,8 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:UDP Socket Demo
+PROJECT_MAIN:udp_server.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.com
+DESCRIPTION:UDP Socket Demo
+SOURCE_REL:udp_server.bas
+SOURCE_REL:udp_client.bas

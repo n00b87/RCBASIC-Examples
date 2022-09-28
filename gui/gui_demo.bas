@@ -46,7 +46,7 @@ Gui_TabGroup_Tab_AddObject(tab_group, tab2, example_panel2)
 
 Gui_Window_AddTabGroup(win, tab_group, 20, 20)
 
-While Not Key(K_ESCAPE)
+While (Not Key(K_ESCAPE)) And WindowExists(win)
 	'Check for Events
 	If Gui_Button_Clicked(example_button) Then
 		win2 = Gui_WindowOpen("TEST 2", WINDOWPOS_CENTERED, WINDOWPOS_CENTERED, 640, 480)

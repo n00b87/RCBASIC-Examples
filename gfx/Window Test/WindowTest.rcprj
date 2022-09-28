@@ -1,0 +1,7 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:Multi-Window Test
+PROJECT_MAIN:WindowTest.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.com
+DESCRIPTION:RCBasic Multi-Window Demo
+SOURCE_REL:WindowTest.bas

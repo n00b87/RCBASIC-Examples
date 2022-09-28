@@ -1,0 +1,7 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:Joystick Test
+PROJECT_MAIN:joystick_demo.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.com
+DESCRIPTION:Joystick Demo
+SOURCE_REL:joystick_demo.bas

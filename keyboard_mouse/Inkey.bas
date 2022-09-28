@@ -1,4 +1,4 @@
-WindowOpen(0, "Keyboard Example", WINDOWPOS_CENTERED, WINDOWPOS_CENTERED, 640, 480, 0)
+WindowOpen(0, "Keyboard Example", WINDOWPOS_CENTERED, WINDOWPOS_CENTERED, 640, 480, WINDOW_VISIBLE, 1)
 CanvasOpen(0, 640, 480, 0, 0, 640, 480, 0)
 
 SetColor(RGB(255,255,255))

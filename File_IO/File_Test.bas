@@ -1,7 +1,7 @@
 'Open a file and write it
 f = FreeFile
 FileOpen(f, "test.txt", TEXT_OUTPUT_PLUS)
-WriteLine(f, "Hello World\n")
+WriteLine(f, "Hello World")
 WriteLine(f, "This is line 2")
 FileClose(f)
 

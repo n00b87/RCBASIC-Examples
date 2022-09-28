@@ -1,0 +1,8 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:TCP Socket Demo
+PROJECT_MAIN:tcp_server.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.com
+DESCRIPTION:TCP Socket Demo
+SOURCE_REL:tcp_server.bas
+SOURCE_REL:tcp_client.bas

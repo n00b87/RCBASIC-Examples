@@ -1,4 +1,6 @@
-WindowOpen(0, "Mouse Test", WINDOWPOS_CENTERED, WINDOWPOS_CENTERED, 640, 480, 0)
+mode = WindowMode(1,0,1,0,0)
+WindowOpen(0, "Mouse Test", WINDOWPOS_CENTERED, WINDOWPOS_CENTERED, 640, 480, mode, 1)
+SetWindowFullscreen(0,1)
 CanvasOpen(0, 640, 480, 0, 0, 640, 480, 1)
 
 LoadFont(0, "FreeMono.ttf", 12)

@@ -9,7 +9,7 @@
 
 '--------------------------------------------------------  
 
-WindowOpen(0,"GoldenWaves",WINDOWPOS_CENTERED,WINDOWPOS_CENTERED,600,600,0)
+WindowOpen(0,"GoldenWaves",WINDOWPOS_CENTERED,WINDOWPOS_CENTERED,600,600,WINDOW_VISIBLE,1)
 CanvasOpen(0,600,600,0,0,600,600,0)
 Window(0)
 darkred=rgb(64,0,0)

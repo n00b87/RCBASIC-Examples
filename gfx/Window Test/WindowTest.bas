@@ -1,5 +1,5 @@
-WindowOpen(0, "Test 0", WINDOWPOS_CENTERED, WINDOWPOS_CENTERED, 640, 480, 0)
-WindowOpen(1, "Test 1", 20, 20, 640, 480, 0)
+WindowOpen(0, "Test 0", WINDOWPOS_CENTERED, WINDOWPOS_CENTERED, 640, 480, WINDOW_VISIBLE, 1)
+WindowOpen(1, "Test 1", 20, 20, 640, 480, WINDOW_VISIBLE, 1)
 
 Window(0)
 Cls

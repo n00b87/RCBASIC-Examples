@@ -1,0 +1,8 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:GUI Demo
+PROJECT_MAIN:gui_demo.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.com
+DESCRIPTION:Gui Library Demo
+SOURCE_REL:gui_demo.bas
+SOURCE_REL:gui.bas

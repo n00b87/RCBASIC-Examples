@@ -1,3 +1,5 @@
+Include Once
+
 GUI_DIR$ = Dir$
 
 GUI_FONT = 0
@@ -248,6 +250,7 @@ Dim Gui_TextField_H[MAX_TEXTFIELDS]
 Dim Gui_TextField_Image[MAX_TEXTFIELDS]
 Dim Gui_TextField_Value$[MAX_TEXTFIELDS]
 Dim Gui_TextField_Offset[MAX_TEXTFIELDS]
+Dim Gui_TextField_isPassword[MAX_TEXTFIELDS]
 
 'CheckBox
 GUI_CHECKBOX_COLOR1 = RGB(140, 140, 140)
@@ -538,10 +541,19 @@ Sub ClearWindowObjects(win)
 End Sub
 
 Function Gui_WindowOpen(title$, x, y, w, h)
+	visible = true
+	fullscreen = false
+	resizable = true
+	borderless = false
+	highDPI = false
+	
+	win_mode = WindowMode(visible, fullscreen, resizable, borderless, highDPI)
+
+	vsync = true
 	For i = 0 to MAX_WINDOWS-1
 		If Not WindowExists(i) Then
 			current_win = gui_current_win
-			WindowOpen(i, title$, x, y, w, h, 0)
+			WindowOpen(i, title$, x, y, w, h, win_mode, vsync)
 			Window(i)
 			Cls
 			CanvasOpen(GUI_TMP_CANVAS, w, h, 0, 0, w, h, 0)
@@ -1740,6 +1752,8 @@ Sub RedrawTextField(t_index)
 	txt$ = Mid(Gui_TextField_Value$[t_index], Gui_TextField_Offset[t_index], Length(Gui_TextField_Value$[t_index]))
 	If Length(txt$) = 0 Then
 		DrawText(" ", 1, 1)
+	ElseIf Gui_TextField_isPassword[t_index] Then
+		DrawText(StringFill$("*", Length(txt$)), 1, 1)
 	Else
 		DrawText(txt$, 1, 1)
 	End If
@@ -2045,6 +2059,16 @@ Function GetDropDownSelection(byref x, byref y)
 	Return selection
 End Function
 
+Function ClipBoard_Text_Event(event_flag)
+	If Not ( event_flag And HasClipboardText ) Then
+		Return 0
+	End If
+	ReadInput_SetText(ReadInput_Text$ + ClipboardText$)
+	Return 1
+End Function
+
+mb_right = 0
+
 Sub Gui_PollEvents()
 	mx = mouseX
 	my = mouseY
@@ -2070,6 +2094,13 @@ Sub Gui_PollEvents()
 		End Select
 	End If
 	
+	If MouseButton(2) Then
+		mb_right = 1
+	ElseIf MouseButton(2) = 0 And mb_right = 1 Then
+		mb_right = 2
+	Else
+		mb_right = 0
+	End If
 	
 	If GUI_STATE = GUI_STATE_DROPDOWN_OPEN Then
 		'handle dropdown here
@@ -2096,6 +2127,7 @@ Sub Gui_PollEvents()
 		
 	ElseIf GUI_STATE = GUI_STATE_TEXTFIELD_EDIT Then
 		t_index = Gui_Element_Index[EVENT_ID]
+		ClipBoard_Text_Event( mb_right = 2 )
 		Gui_TextField_Value$[t_index] = ReadInput_Text$
 		Gui_TextField_Offset[t_index] = Length(Gui_TextField_Value$[t_index]) - (Gui_TextField_W[t_index]/GUI_FONT_W)
 		If Gui_TextField_Offset[t_index] < 0 Then
@@ -2640,6 +2672,18 @@ Function Gui_DropDown_GetValue$(id, item_num)
 	Return ""
 End Function
 
+Function Gui_DropDown_Search(id, txt$)
+	d_index = Gui_Element_Index[id]
+	If Gui_DropDown_Exists[d_index] Then
+		For i = 0 to Gui_DropDown_Count[d_index]-1
+			If Gui_DropDown_Value$[d_index, i] = txt$ Then
+				Return i
+			End If
+		Next
+	End If
+	Return -1
+End Function
+
 Function Gui_DropDown_SetValue(id, item_num, txt$)
 	d_index = Gui_Element_Index[id]
 	If Gui_DropDown_Exists[d_index] And item_num < Gui_DropDown_Count[d_index] Then
@@ -2713,6 +2757,24 @@ Function Gui_TextField_SetValue(tfield_id, t_value$)
 			RedrawTextField(tfield_index)
 		End If
 		Return True
+	End If
+	Return False
+End Function
+
+Function Gui_TextField_SetPasswordField(tfield_id, attribute_value)
+	tfield_index = Gui_Element_Index[tfield_id]
+	If Gui_TextField_Exists[tfield_index] Then
+		Gui_TextField_isPassword[tfield_index] = attribute_value
+		RedrawTextField(tfield_index)
+		Return True
+	End If
+	Return False
+End Function
+
+Function Gui_TextField_GetPasswordFieldAttribute(tfield_id)
+	tfield_index = Gui_Element_Index[tfield_id]
+	If Gui_TextField_Exists[tfield_index] Then
+		Return Gui_TextField_isPassword[tfield_index]
 	End If
 	Return False
 End Function

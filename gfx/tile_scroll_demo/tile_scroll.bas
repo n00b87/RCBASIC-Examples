@@ -11,7 +11,7 @@
 viewport_width_inPixels = 320
 viewport_height_inPixels = 200
 
-WindowOpen(0, "TILE", WINDOWPOS_CENTERED, WINDOWPOS_CENTERED, 640, 480, 0)
+WindowOpen(0, "TILE", WINDOWPOS_CENTERED, WINDOWPOS_CENTERED, 640, 480, WINDOW_VISIBLE, 1)
 
 CanvasOpen(0, viewport_width_inPixels, viewport_height_inPixels, 100, 100, viewport_width_inPixels, viewport_height_inPixels, 0)
 

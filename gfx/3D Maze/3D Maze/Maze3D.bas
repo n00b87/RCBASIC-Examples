@@ -505,12 +505,15 @@ Function render3DProjectedWalls()
     Next
 End Function
 
+WIN_W = 960
+WIN_H = 704
+
 Include "floor.bas"
 
 Function setup()
-	WIN_W = 640
-	WIN_H = 480
-    WindowOpen(0, "Raycast", WINDOWPOS_CENTERED, WINDOWPOS_CENTERED, WIN_W, WIN_H, 0)
+	WIN_W = 960
+	WIN_H = 704
+    WindowOpen(0, "Raycast", WINDOWPOS_CENTERED, WINDOWPOS_CENTERED, WIN_W, WIN_H, WINDOW_VISIBLE, 1)
     CanvasOpen(0, WIN_W, WIN_H, 0, 0, WIN_W, WIN_H, 1)
     CanvasOpen(BUFFER_BACK, WIN_W, WIN_H, 0, 0, WIN_W, WIN_H, 0)
     
@@ -552,7 +555,7 @@ Function draw()
     
     f = GetFreeImage
     CanvasClip(f, 0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, 1)
-    DrawImage_Blit_Ex(f, 0, 0, 640, 480, 0, 0, WINDOW_WIDTH, WINDOW_HEIGHT)
+    DrawImage_Blit_Ex(f, 0, 0, WIN_W, WIN_H, 0, 0, WINDOW_WIDTH, WINDOW_HEIGHT)
     DeleteImage(f)
     
 End Function

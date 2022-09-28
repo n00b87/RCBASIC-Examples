@@ -178,7 +178,7 @@ End Sub
 
 '440
 
-WindowOpen(0, "Video Demo", WINDOWPOS_CENTERED, WINDOWPOS_CENTERED, 640, 480, 0)
+WindowOpen(0, "Video Demo", WINDOWPOS_CENTERED, WINDOWPOS_CENTERED, 640, 480, WINDOW_VISIBLE, 1)
 
 LoadAssets
 
@@ -216,3 +216,4 @@ Wend
 
 DeleteVideo
 WindowClose(0)
+

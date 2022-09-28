@@ -1,0 +1,7 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:Mini Player
+PROJECT_MAIN:video_demo.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.com
+DESCRIPTION:A Minimal Video Player Demo
+SOURCE_REL:video_demo.bas

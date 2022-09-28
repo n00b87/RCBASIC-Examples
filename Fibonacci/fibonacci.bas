@@ -9,6 +9,5 @@ for i = 0 to 15
 next
 print "..."
 
-System("pause")
+End 0
 
-end

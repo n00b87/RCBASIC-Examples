@@ -28,7 +28,7 @@
 '--------------------------------------------------------
 
 display_width = 640
-windowOpen(0,"Beast Demo", 30, 30, 640,480,0)
+windowOpen(0,"Beast Demo", 30, 30, 640,480, WINDOW_VISIBLE, 1)
 window(0)
 CanvasOpen(0,640,480,0,0,640,480,1)
 CanvasOpen(1,640,480,0,0,640,480,1)

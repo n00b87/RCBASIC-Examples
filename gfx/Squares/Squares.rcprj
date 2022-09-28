@@ -1,0 +1,7 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:Squares
+PROJECT_MAIN:draw_squares.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.com
+DESCRIPTION:Drawing Squares
+SOURCE_REL:draw_squares.bas

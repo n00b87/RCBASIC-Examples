@@ -1,0 +1,8 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:Canvas Test
+PROJECT_MAIN:canvas_test_optimized.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.com
+DESCRIPTION:RCBasic Canvas Demo
+SOURCE_REL:canvas_test_optimized.bas
+SOURCE_REL:canvas_test_unoptimized.bas

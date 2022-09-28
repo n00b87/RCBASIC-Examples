@@ -1,4 +1,4 @@
-WindowOpen(0,"Joystick Test",50,50,640,480,0)
+WindowOpen(0,"Joystick Test",50,50,640,480,WINDOW_VISIBLE,1)
 CanvasOpen(0,640,480,0,0,640,480,0)
 LoadFont(0,"FreeMono.ttf",16)
 SetColor(rgb(255,255,255))

@@ -1,5 +1,5 @@
 'Open a 640x480 Window in the middle of the screen
-WindowOpen(0, "Simple GFX Example", WINDOWPOS_CENTERED, WINDOWPOS_CENTERED, 640, 480, 0)
+WindowOpen(0, "Simple GFX Example", WINDOWPOS_CENTERED, WINDOWPOS_CENTERED, 640, 480, WINDOW_VISIBLE, 1)
 
 'Opens a 640x480 canvas with a 640x480 viewport that is positioned at (0,0) in the window
 CanvasOpen(0, 640, 480, 0, 0, 640, 480, 0)

@@ -1,0 +1,7 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:Tile Scrolling
+PROJECT_MAIN:tile_scroll.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.com
+DESCRIPTION:Scrolling Tiled Graphics Demo
+SOURCE_REL:tile_scroll.bas
