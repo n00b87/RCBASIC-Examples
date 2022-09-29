@@ -4,4 +4,4 @@ PROJECT_MAIN:fibonacci.bas
 AUTHOR:n00b
 WEBSITE:rcbasic.com
 DESCRIPTION:Fibonacci Sequence
-SOURCE_REL:fibonacci.bas.bas
+SOURCE_REL:fibonacci.bas
