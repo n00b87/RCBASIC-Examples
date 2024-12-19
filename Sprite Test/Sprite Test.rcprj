@@ -1,0 +1,7 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:Sprite Test
+PROJECT_MAIN:main.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.freeforums.net
+DESCRIPTION:Demo of the new sprite system in RCBasic 4
+SOURCE_REL:main.bas

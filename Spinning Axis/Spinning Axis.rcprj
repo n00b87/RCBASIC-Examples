@@ -1,0 +1,8 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:Spinning Axis
+PROJECT_MAIN:main.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.freeforums.net
+DESCRIPTION:A demo of rotating around a center axis.
+SOURCE_REL:main.bas
+SOURCE_REL:util.bas

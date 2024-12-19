@@ -1,0 +1,8 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:Simple 3D Platformer
+PROJECT_MAIN:main.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.freeforums.net
+DESCRIPTION:A simple physics example in RCBasic 4
+SOURCE_REL:main.bas
+SOURCE_REL:util.bas

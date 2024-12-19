@@ -1,0 +1,7 @@
+RCBASIC_STUDIO:1.0
+PROJECT_NAME:Constraint Demo
+PROJECT_MAIN:main.bas
+AUTHOR:n00b
+WEBSITE:rcbasic.freeforums.net
+DESCRIPTION:Shows off a simple constraint
+SOURCE_REL:main.bas

@@ -1,3 +1,11 @@
+'----------------------------------------------------------------
+'   TITLE: Fibonacci Sequence
+'   AUTHOR: n00b
+'   DATE: Sometime in 2015
+'
+'   DESCRIPTION: Its the standard fibonacci sequence
+'----------------------------------------------------------------
+
 dim fi[16]
 fi[0] = 0
 fi[1] = 1
